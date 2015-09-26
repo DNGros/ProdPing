@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            return true;  
         }
 
         return super.onOptionsItemSelected(item);
