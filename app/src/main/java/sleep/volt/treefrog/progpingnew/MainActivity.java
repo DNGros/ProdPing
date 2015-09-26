@@ -6,11 +6,17 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends Activity {
-
+    QuestionPicker thePicker;
+    Question currentQuestion;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question);
+
+        thePicker  = new QuestionPicker();
+        currentQuestion = thePicker.getNewQuestion();
+
+
     }
 
     @Override
@@ -29,7 +35,7 @@ public class MainActivity extends Activity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;  
+            return true;
         }
 
         return super.onOptionsItemSelected(item);
