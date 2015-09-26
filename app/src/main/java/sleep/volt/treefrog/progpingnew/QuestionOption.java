@@ -5,8 +5,8 @@ package sleep.volt.treefrog.progpingnew;
  * One option for the
  */
 public class QuestionOption {
-    String caption;
-    int id;
+    private String caption;
+    private int id;
     public QuestionOption(String myCaption, int ID){
         caption = myCaption;
         id = ID;

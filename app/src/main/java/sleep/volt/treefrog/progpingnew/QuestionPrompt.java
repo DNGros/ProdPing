@@ -5,12 +5,16 @@ package sleep.volt.treefrog.progpingnew;
  * Represents what we are asking
  */
 public class QuestionPrompt {
-    String name;
-    String text;
-    int id;
+    private String name;
+    private String text;
+    private int id;
     public QuestionPrompt(String questionName, String questionText, int id){
         name = questionName;
         text = questionText;
         this.id = id;
+    }
+
+    public String getText() {
+        return text;
     }
 }

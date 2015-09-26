@@ -18,6 +18,8 @@ public class Question {
     public Question(QuestionPrompt newPrompt, ArrayList<QuestionOption> newQuestionOption){
         myOptions = newQuestionOption;
         prompt = newPrompt;
+
+
     }
 
     /**
@@ -28,5 +30,9 @@ public class Question {
     public boolean addOption(QuestionOption newOption){
         myOptions.add(newOption);
         return true;
+    }
+
+    public QuestionPrompt getPrompt(){
+        return prompt;
     }
 }

@@ -4,10 +4,19 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends Activity {
     QuestionPicker thePicker;
     Question currentQuestion;
+    TextView promptDisplay;
+    Button optionBut1;
+    Button optionBut2;
+    Button optionBut3;
+    Button optionBut4;
+    Button optionBut5;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,6 +24,11 @@ public class MainActivity extends Activity {
 
         thePicker  = new QuestionPicker();
         currentQuestion = thePicker.getNewQuestion();
+
+        TextView promptDisplay = (TextView)findViewById(R.id.promptDisplay);
+        promptDisplay.setText(currentQuestion.getPrompt().getText());
+
+
 
 
     }
