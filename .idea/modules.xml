@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ProdPing.iml" filepath="$PROJECT_DIR$/ProdPing.iml" />
+<<<<<<< HEAD
+=======
       <module fileurl="file://$PROJECT_DIR$/ProgPingNew.iml" filepath="$PROJECT_DIR$/ProgPingNew.iml" />
+>>>>>>> 0534ba4621512796c837c974b9dded76100f7ce4
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

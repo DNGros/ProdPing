@@ -41,12 +41,12 @@ public class ActivityPreferences extends Activity {
     public void sendMessage(View view) {
         EditText num = (EditText) findViewById(R.id.num);
         String message = num.getText().toString();
-        /*try {
+        try {
             int numPrefer = Integer.parseInt(message);
         }
         catch(Exception e) {
             System.out.println("Number is not an integer");
-        }*/
+        }
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
