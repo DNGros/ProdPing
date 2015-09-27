@@ -36,7 +36,7 @@ public class MainActivity extends Activity {
         buttonsL.add(new OpButton((Button)findViewById(R.id.option5)));
 
         // Populate prompt text
-        promptDisplay.setText(currentQuestion.getPrompt().getText());
+        promptDisplay.setText(currentQuestion.getPrompt());
 
         // Loop through and populate buttons
        curOptions = currentQuestion.getOptions();

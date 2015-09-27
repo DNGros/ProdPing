@@ -6,13 +6,22 @@ package sleep.volt.treefrog.progpingnew;
  */
 public class QuestionOption {
     private String caption;
-    private int id;
+    private String name;
     String followQuestionUpName;
 
+    /**
+     *
+     * @param name unique name
+     * @param myCaption what is displayed to user
+     */
     public QuestionOption(String name, String myCaption){
         caption = myCaption;
+        this.name = name;
     }
 
+    public String getName() {
+        return name;
+    }
     public String getCaption() {
         return caption;
     }
