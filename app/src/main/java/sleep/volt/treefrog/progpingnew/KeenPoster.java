@@ -14,6 +14,7 @@ public class KeenPoster {
     public KeenPoster(String userNameSecret) {
        // KeenClient client = new AndroidKeenClientBuilder(this).build();
        // client.close();
+
     }
 
     /**
