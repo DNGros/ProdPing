@@ -19,6 +19,7 @@ public class MainActivity extends Activity {
     OpButton optionBut5;
     static MainActivity curInstance;
     boolean hasResponded = false;
+    KeenPoster myPoster;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,14 +73,14 @@ public class MainActivity extends Activity {
     }
 
     public boolean respondToQuestion(QuestionOption answer){
-        if(!hasResponded) {
+        if(true) {
             Log.v("got", answer.getName() + " responded " + this.currentQuestion.getName());
-            /*KeenPoster poster = new KeenPoster("useruser");
-            poster.postQuestion(q, answer);*/
+            myPoster = new KeenPoster("useruser", this);
+            myPoster.postQuestion(currentQuestion, answer);
             hasResponded = true;
             return true;
         }
         return false;
     }
-
+    
 }

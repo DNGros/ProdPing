@@ -1,5 +1,7 @@
 package sleep.volt.treefrog.progpingnew;
 import android.app.Activity;
+import android.util.Log;
+
 import java.io.BufferedInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -33,6 +35,7 @@ import java.util.Map;
 public class KeenPoster {
     String user;
     KeenClient client;
+
     // Change args to whatever you need to make it work
     // Idk, may need to be changed around
     public KeenPoster(String userNameSecret, Activity l) {
@@ -74,6 +77,7 @@ public class KeenPoster {
 
 
         }*/
+        Log.v("keen", "about to quie");
         // Add it to the "purchases" collection in your Keen Project.
         KeenClient.client().queueEvent("Questions and answers", event);
 
