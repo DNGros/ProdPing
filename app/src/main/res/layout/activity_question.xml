@@ -51,6 +51,7 @@
                 android:id="@+id/option2"
                 android:layout_gravity="right"
                 android:layout_margin="20dp" />
+            
         </TableRow>
 
         <TableRow>
