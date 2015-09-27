@@ -7,9 +7,10 @@ package sleep.volt.treefrog.progpingnew;
 public class QuestionOption {
     private String caption;
     private int id;
-    public QuestionOption(String myCaption, int ID){
+    String followQuestionUpName;
+
+    public QuestionOption(String name, String myCaption){
         caption = myCaption;
-        id = ID;
     }
 
     public String getCaption() {

@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class Question {
     private ArrayList<QuestionOption> myOptions;
     private QuestionPrompt prompt;
-
+    private String name;
     /**
      *
      * @param newPrompt
@@ -33,7 +33,7 @@ public class Question {
     public QuestionPrompt getPrompt(){
         return prompt;
     }
-
+    public String getName(){return name;}
     public ArrayList<QuestionOption> getOptions(){
         return myOptions;
     }

@@ -9,12 +9,14 @@ import java.util.ArrayList;
 public class QuestionPicker {
     public Question getNewQuestion(){
         QuestionPrompt newPrompt = new QuestionPrompt("Status", "What are you doing right now?", 1);
+
+
         ArrayList<QuestionOption> newOptions = new ArrayList<>();
-        newOptions.add(new QuestionOption("Working", 1));
-        newOptions.add(new QuestionOption("Social Media", 2));
-        newOptions.add(new QuestionOption("Playing", 3));
-        newOptions.add(new QuestionOption("Eating", 4));
-        newOptions.add(new QuestionOption("other", 5));
+        newOptions.add(new QuestionOption("working", "Working"));
+        newOptions.add(new QuestionOption("social_media", "Social Media"));
+        newOptions.add(new QuestionOption("playing", "Playing"));
+        newOptions.add(new QuestionOption("eating", "Eating"));
+        newOptions.add(new QuestionOption("other", "Other"));
 
         Question returnQ = new Question(newPrompt, newOptions);
 
