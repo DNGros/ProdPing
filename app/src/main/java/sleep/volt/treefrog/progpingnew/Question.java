@@ -8,15 +8,16 @@ import java.util.ArrayList;
  */
 public class Question {
     private ArrayList<QuestionOption> myOptions;
-    private QuestionPrompt prompt;
-    private String name;
+    private String prompt;
+    private String name; // Unique name of question
     /**
      * @param newPrompt
      * @param newQuestionOption
      */
-    public Question(QuestionPrompt newPrompt, ArrayList<QuestionOption> newQuestionOption){
+    public Question(String name, String newPrompt, ArrayList<QuestionOption> newQuestionOption){
         myOptions = newQuestionOption;
         prompt = newPrompt;
+        this.name = name;
     }
 
     /**
@@ -28,7 +29,7 @@ public class Question {
         return true;
     }
 
-    public QuestionPrompt getPrompt(){
+    public String getPromptName(){
         return prompt;
     }
     public String getName(){return name;}

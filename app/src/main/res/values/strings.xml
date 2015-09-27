@@ -5,7 +5,8 @@
     <string name="action_settings">Settings</string>
     <string name="top">Welcome to ProdPing!</string>
     <string name="title_activity_welcomer">Welcomer</string>
-    <string name="title_activity_activity_preferences">ActivityPreferences</string>>
+    <string name="title_activity_activity_preferences">ActivityPreferences</string>
+    <string name="title_activity_ping_success">PingSuccess</string>>
     <string name="name">Enter your name here...</string>
     <string name="num">Enter an integer from 1 to 24 here...</string>
 </resources>

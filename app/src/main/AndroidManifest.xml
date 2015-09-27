@@ -28,6 +28,10 @@
             android:name=".ActivityPreferences"
             android:label="@string/title_activity_activity_preferences" >
         </activity>
+        <activity
+            android:name=".PingSuccess"
+            android:label="@string/title_activity_ping_success" >
+        </activity>
     </application>
 
 </manifest>
