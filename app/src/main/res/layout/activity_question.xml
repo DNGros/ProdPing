@@ -10,52 +10,84 @@
         android:id="@+id/textView" />
 
 
-    <LinearLayout
+    <TableLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/textView"
         android:layout_alignParentStart="true"
         android:layout_marginTop="36dp"
-        android:id="@+id/linearLayout">
+        android:id="@+id/tableLayout">
 
-        <Button
-            android:layout_width="fill_parent"
-            android:layout_weight="1"
-            android:layout_height="fill_parent"
-            android:text="New Button"
-            android:id="@+id/option1"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="20dp" />
+        <TableRow>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:src="@drawable/Work_pic" />
 
-        <Button
-            android:layout_width="fill_parent"
-            android:layout_weight="1"
-            android:layout_height="fill_parent"
-            android:text="New Button"
-            android:id="@+id/option2"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="20dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/option1"
+                android:layout_gravity="right"
+                android:layout_margin="20dp" />
+        </TableRow>
 
-        <Button
-            android:layout_width="fill_parent"
-            android:layout_weight="1"
-            android:layout_height="fill_parent"
-            android:text="New Button"
-            android:id="@+id/option3"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="20dp" />
+        <TableRow>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:src="@drawable/SocialMedia_pic" />
 
-        <Button
-            android:layout_width="fill_parent"
-            android:layout_weight="1"
-            android:layout_height="fill_parent"
-            android:text="New Button"
-            android:id="@+id/option4"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="20dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/option2"
+                android:layout_gravity="right"
+                android:layout_margin="20dp" />
+        </TableRow>
 
-    </LinearLayout>
+        <TableRow>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:src="@drawable/Playing_pic" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/option3"
+                android:layout_gravity="right"
+                android:layout_margin="20dp" />
+        </TableRow>
+
+        <TableRow>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:src="@drawable/Other_pic" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/option4"
+                android:layout_gravity="right"
+                android:layout_margin="20dp" />
+        </TableRow>
+
+    </TableLayout>
 
     <TextView
         android:layout_width="wrap_content"
