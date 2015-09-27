@@ -2,6 +2,7 @@ package sleep.volt.treefrog.progpingnew;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
@@ -16,7 +17,8 @@ public class MainActivity extends Activity {
     TextView promptDisplay;
     ArrayList<OpButton> buttonsL;
     OpButton optionBut5;
-
+    static MainActivity curInstance;
+    boolean hasResponded = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +26,7 @@ public class MainActivity extends Activity {
 
         thePicker  = new QuestionPicker();
         currentQuestion = thePicker.getNewQuestion();
-
+        curInstance = this;
         // Get objects out of xml
         promptDisplay = (TextView)findViewById(R.id.promptDisplay);
 
@@ -41,7 +43,7 @@ public class MainActivity extends Activity {
         // Loop through and populate buttons
        curOptions = currentQuestion.getOptions();
         for(int i = 0; i < buttonsL.size() && i < curOptions.size(); i++){
-            buttonsL.get(i).setCaption(curOptions.get(i).getCaption());
+            buttonsL.get(i).setOption(curOptions.get(i));
         }
 
         // People
@@ -68,4 +70,16 @@ public class MainActivity extends Activity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public boolean respondToQuestion(QuestionOption answer){
+        if(!hasResponded) {
+            Log.v("got", answer.getName() + " responded " + this.currentQuestion.getName());
+            /*KeenPoster poster = new KeenPoster("useruser");
+            poster.postQuestion(q, answer);*/
+            hasResponded = true;
+            return true;
+        }
+        return false;
+    }
+
 }
