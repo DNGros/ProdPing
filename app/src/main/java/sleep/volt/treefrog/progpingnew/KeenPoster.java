@@ -1,5 +1,10 @@
 package sleep.volt.treefrog.progpingnew;
 import android.app.Activity;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.app.TaskStackBuilder;
+import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 
 import java.io.BufferedInputStream;
@@ -86,6 +91,11 @@ public class KeenPoster {
         // Add it to the "purchases" collection in your Keen Project.
         KeenClient.client().queueEvent("Questions and answers", event);
         KeenClient.client().sendQueuedEventsAsync();
+
+
+
+
+
         return true;
     }
 

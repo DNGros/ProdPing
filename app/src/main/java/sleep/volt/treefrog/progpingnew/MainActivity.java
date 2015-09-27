@@ -1,6 +1,12 @@
 package sleep.volt.treefrog.progpingnew;
 
 import android.app.Activity;
+import android.app.AlarmManager;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.app.TaskStackBuilder;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -8,6 +14,7 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.TextView;
 
+import android.support.v4.app.NotificationCompat;
 import java.util.ArrayList;
 
 import javax.xml.datatype.Duration;
@@ -24,6 +31,7 @@ public class MainActivity extends Activity {
     static MainActivity curInstance;
     boolean hasResponded = false;
     KeenPoster myPoster;
+    int mId = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -90,6 +98,8 @@ public class MainActivity extends Activity {
             QuestionScheduler qs = new QuestionScheduler();
             qs.planFollowUp(new FollowUp("after_test", 30));
             hasResponded = true;
+
+
 
 
             return true;
