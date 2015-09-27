@@ -11,7 +11,6 @@ public class Question {
     private QuestionPrompt prompt;
     private String name;
     /**
-     *
      * @param newPrompt
      * @param newQuestionOption
      */
@@ -21,7 +20,6 @@ public class Question {
     }
 
     /**
-     *
      * @param newOption new option to add
      * @return if add was successful
      */

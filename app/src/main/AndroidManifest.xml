@@ -16,6 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Welcomer"
+            android:label="@string/title_activity_welcomer" >
+        </activity>
+        <activity
+            android:name=".ActivityPreferences"
+            android:label="@string/title_activity_activity_preferences" >
+        </activity>
     </application>
 
 </manifest>

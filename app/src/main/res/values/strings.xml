@@ -3,5 +3,7 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="top">Welcome to ProdPing!</string>>
+    <string name="top">Welcome to ProdPing!</string>
+    <string name="title_activity_welcomer">Welcomer</string>
+    <string name="title_activity_activity_preferences">ActivityPreferences</string>>
 </resources>

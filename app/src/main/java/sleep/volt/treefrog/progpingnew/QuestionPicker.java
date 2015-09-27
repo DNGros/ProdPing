@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /**
  * Created by dgros_000 on 9/26/2015.
- * Picker
+ * Stores reference of questions and can pick one when none available to Scheduler
  */
 public class QuestionPicker {
     public Question getNewQuestion(){

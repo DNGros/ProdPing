@@ -16,4 +16,5 @@ public class OpButton{
     public void setCaption(String newCaption){
         myBut.setText(newCaption);
     }
+
 }

@@ -8,7 +8,7 @@ public class KeenPoster {
     String user;
     // Change args to whatever you need to make it work
     // Idk, may need to be changed around
-    public KeenPoster(String keenURL, String userName){
+    public KeenPoster(String userNameSecret) {
 
     }
 
