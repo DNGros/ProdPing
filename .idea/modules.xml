@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ProdPing.iml" filepath="$PROJECT_DIR$/ProdPing.iml" />
-<<<<<<< HEAD
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-=======
       <module fileurl="file://$PROJECT_DIR$/ProgPingNew.iml" filepath="$PROJECT_DIR$/ProgPingNew.iml" />
->>>>>>> 93a505ade0c1a1e8b017d9cf97dfa8a88f8ee14b
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
 </project>
