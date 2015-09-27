@@ -24,7 +24,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
-                android:src="@drawable/Work_pic" />
+                android:src="@drawable/work_pic" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -41,7 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
-                android:src="@drawable/SocialMedia_pic" />
+                android:src="@drawable/socialmedia_pic" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -58,7 +58,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
-                android:src="@drawable/Playing_pic" />
+                android:src="@drawable/playing_pic" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -75,7 +75,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
-                android:src="@drawable/Other_pic" />
+                android:src="@drawable/other_pic" />
 
             <Button
                 android:layout_width="wrap_content"
