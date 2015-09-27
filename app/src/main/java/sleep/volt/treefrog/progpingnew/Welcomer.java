@@ -1,9 +1,12 @@
 package sleep.volt.treefrog.progpingnew;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
 
 public class Welcomer extends Activity {
 
@@ -33,5 +36,12 @@ public class Welcomer extends Activity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void sendMessage(View view) {
+        EditText name = (EditText) findViewById(R.id.name);
+        String fullName = name.getText().toString();
+        Intent intent = new Intent(this, ActivityPreferences.class);
+        startActivity(intent);
     }
 }

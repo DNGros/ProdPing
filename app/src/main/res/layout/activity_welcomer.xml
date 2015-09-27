@@ -39,6 +39,7 @@
             android:text="Next"
             android:textSize="28sp"
             android:id="@+id/option1"
+            android:onClick="sendMessage"
             android:layout_gravity="center_horizontal"
             android:layout_margin="0dp" />
 
