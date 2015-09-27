@@ -19,8 +19,8 @@
             android:layout_width="400dp"
             android:layout_height="50dp"
             android:text="How many notifications do you want?"
-            android:layout_margin="10dp"
-            android:textSize="20sp"/>
+            android:layout_margin="20dp"
+            android:textSize="18sp"/>
 
         <EditText
             android:layout_width="fill_parent"

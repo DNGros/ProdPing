@@ -23,7 +23,7 @@
             android:layout_width="400dp"
             android:layout_height="50dp"
             android:text="Hi!   What is your name?"
-            android:layout_margin="70dp"
+            android:layout_margin="60dp"
             android:textSize="20sp"/>
 
         <EditText

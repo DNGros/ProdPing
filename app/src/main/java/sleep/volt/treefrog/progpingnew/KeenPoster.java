@@ -53,7 +53,13 @@ public class KeenPoster {
        // client.close();
 
     }
+    protected void onPause() {
+        // Send all queued events to Keen. Use the asynchronous method to
+        // avoid network activity on the main thread.
+        KeenClient.client().sendQueuedEventsAsync();
 
+        super.onPause();
+    }
     /**
      * Posts a question
      * @return successfully made request
