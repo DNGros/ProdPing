@@ -18,6 +18,8 @@ public class PingResponseHandler {
         Log.v("got", q.getName() + " responded " + answer.getName());
         /*KeenPoster poster = new KeenPoster("useruser");
         poster.postQuestion(q, answer);*/
+
+
         return true;
     }
 

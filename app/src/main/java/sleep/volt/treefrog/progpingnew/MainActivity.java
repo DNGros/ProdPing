@@ -10,6 +10,10 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import javax.xml.datatype.Duration;
+
+import io.keen.client.java.KeenClient;
+
 public class MainActivity extends Activity {
     QuestionPicker thePicker;
     Question currentQuestion;
@@ -71,16 +75,26 @@ public class MainActivity extends Activity {
 
         return super.onOptionsItemSelected(item);
     }
+    protected void onPause() {
+        // Send all queued events to Keen. Use the asynchronous method to
+        // avoid network activity on the main thread.
+        myPoster.handlePause();
 
+        super.onPause();
+    }
     public boolean respondToQuestion(QuestionOption answer){
-        if(true) {
+        if(!hasResponded) {
             Log.v("got", answer.getName() + " responded " + this.currentQuestion.getName());
             myPoster = new KeenPoster("useruser", this);
             myPoster.postQuestion(currentQuestion, answer);
+            QuestionScheduler qs = new QuestionScheduler();
+            qs.planFollowUp(new FollowUp("after_test", 30));
             hasResponded = true;
+
+
             return true;
         }
         return false;
     }
-    
+
 }
