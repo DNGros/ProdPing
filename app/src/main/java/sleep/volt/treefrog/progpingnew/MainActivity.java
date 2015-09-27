@@ -7,15 +7,15 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class MainActivity extends Activity {
     QuestionPicker thePicker;
     Question currentQuestion;
+    ArrayList<QuestionOption> curOptions;
     TextView promptDisplay;
-    Button optionBut1;
-    Button optionBut2;
-    Button optionBut3;
-    Button optionBut4;
-    Button optionBut5;
+    ArrayList<OpButton> buttonsL;
+    OpButton optionBut5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,12 +25,25 @@ public class MainActivity extends Activity {
         thePicker  = new QuestionPicker();
         currentQuestion = thePicker.getNewQuestion();
 
-        TextView promptDisplay = (TextView)findViewById(R.id.promptDisplay);
+        // Get objects out of xml
+        promptDisplay = (TextView)findViewById(R.id.promptDisplay);
+
+        buttonsL = new ArrayList<>();
+        buttonsL.add(new OpButton((Button)findViewById(R.id.option1)));
+        buttonsL.add(new OpButton((Button)findViewById(R.id.option2)));
+        buttonsL.add(new OpButton((Button)findViewById(R.id.option3)));
+        buttonsL.add(new OpButton((Button)findViewById(R.id.option4)));
+
+        // Populate prompt text
         promptDisplay.setText(currentQuestion.getPrompt().getText());
 
+        // Loop through and populate buttons
+       curOptions = currentQuestion.getOptions();
+        for(int i = 0; i < buttonsL.size() && i < curOptions.size(); i++){
+            buttonsL.get(i).setCaption(curOptions.get(i).getCaption());
+        }
 
-
-
+        // People
     }
 
     @Override

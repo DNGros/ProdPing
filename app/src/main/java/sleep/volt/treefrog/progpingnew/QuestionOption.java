@@ -11,4 +11,8 @@ public class QuestionOption {
         caption = myCaption;
         id = ID;
     }
+
+    public String getCaption() {
+        return caption;
+    }
 }

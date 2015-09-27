@@ -7,8 +7,8 @@ import java.util.ArrayList;
  * Represents a question to the user
  */
 public class Question {
-    ArrayList<QuestionOption> myOptions;
-    QuestionPrompt prompt;
+    private ArrayList<QuestionOption> myOptions;
+    private QuestionPrompt prompt;
 
     /**
      *
@@ -18,8 +18,6 @@ public class Question {
     public Question(QuestionPrompt newPrompt, ArrayList<QuestionOption> newQuestionOption){
         myOptions = newQuestionOption;
         prompt = newPrompt;
-
-
     }
 
     /**
@@ -35,4 +33,9 @@ public class Question {
     public QuestionPrompt getPrompt(){
         return prompt;
     }
+
+    public ArrayList<QuestionOption> getOptions(){
+        return myOptions;
+    }
+
 }
