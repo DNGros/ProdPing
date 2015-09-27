@@ -33,7 +33,7 @@
                 android:text="New Button"
                 android:id="@+id/option1"
                 android:layout_gravity="right"
-                android:layout_margin="20dp" />
+                android:layout_margin="15dp" />
         </TableRow>
 
         <TableRow>
@@ -50,8 +50,7 @@
                 android:text="New Button"
                 android:id="@+id/option2"
                 android:layout_gravity="right"
-                android:layout_margin="20dp" />
-            
+                android:layout_margin="15dp" />
         </TableRow>
 
         <TableRow>
@@ -68,7 +67,24 @@
                 android:text="New Button"
                 android:id="@+id/option3"
                 android:layout_gravity="right"
-                android:layout_margin="20dp" />
+                android:layout_margin="15dp" />
+        </TableRow>
+
+        <TableRow>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:src="@drawable/eating_pic" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/option4"
+                android:layout_gravity="right"
+                android:layout_margin="15dp" />
         </TableRow>
 
         <TableRow>
@@ -85,7 +101,7 @@
                 android:text="New Button"
                 android:id="@+id/option4"
                 android:layout_gravity="right"
-                android:layout_margin="20dp" />
+                android:layout_margin="15dp" />
         </TableRow>
 
     </TableLayout>
