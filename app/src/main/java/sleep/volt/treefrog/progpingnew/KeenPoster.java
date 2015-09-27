@@ -45,8 +45,8 @@ public class KeenPoster {
 
         // Get the project ID and write key from string resources, then create a project and set
         // it as the default for the client.
-        String projectId = "560727a690e4bd7b0d9d9d2c";
-        String writeKey = "057082ad2fff5d0e05cc21e0705c8929da231edcae03548b0f7ec097c6ebaa438c98b116cf3f670ae2c2c449b81e23e0e2d266308d6ca69e4c9ee0e43d512f80053d7bc394f792caa5c9a0f3d2d93a207e21386eabbd608e09a55f603d750314b92f2e525030b714c591f54fe6d43d5f";
+        String projectId = "560724bc46f9a7306e40299e";
+        String writeKey = "38b4fa2e812dd3c0d93296a16e75cb873efcd98613db7af48da17039d204df6e0943c8dec31cfab4ae982cf869b0d45c261530748c6256eb93ea3a79f01cf68c5e37cd6681203faf6f14a58114821cb81cda772d270fdb92881aab2a67603c6dd39da79cef970324e91dcaba6d80a6a5";
         KeenProject project = new KeenProject(projectId, writeKey, null);
         client.setDefaultProject(project);
         KeenClient.initialize(client);
