@@ -33,6 +33,7 @@ public class MainActivity extends Activity {
         buttonsL.add(new OpButton((Button)findViewById(R.id.option2)));
         buttonsL.add(new OpButton((Button)findViewById(R.id.option3)));
         buttonsL.add(new OpButton((Button)findViewById(R.id.option4)));
+        buttonsL.add(new OpButton((Button)findViewById(R.id.option5)));
 
         // Populate prompt text
         promptDisplay.setText(currentQuestion.getPrompt().getText());

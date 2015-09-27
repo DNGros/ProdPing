@@ -11,10 +11,10 @@ public class QuestionPicker {
         QuestionPrompt newPrompt = new QuestionPrompt("Status", "What are you doing right now?", 1);
         ArrayList<QuestionOption> newOptions = new ArrayList<>();
         newOptions.add(new QuestionOption("Working", 1));
-        newOptions.add(new QuestionOption("Social Media", 1));
-        newOptions.add(new QuestionOption("Playing", 1));
-        newOptions.add(new QuestionOption("Talking", 1));
-        newOptions.add(new QuestionOption("Other", 1));
+        newOptions.add(new QuestionOption("Social Media", 2));
+        newOptions.add(new QuestionOption("Playing", 3));
+        newOptions.add(new QuestionOption("Eating", 4));
+        newOptions.add(new QuestionOption("other", 5));
 
         Question returnQ = new Question(newPrompt, newOptions);
 

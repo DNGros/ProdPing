@@ -17,4 +17,8 @@ public class QuestionPrompt {
     public String getText() {
         return text;
     }
+
+    public String getName() {
+        return name;
+    }
 }
