@@ -8,9 +8,6 @@ import java.util.ArrayList;
  */
 public class QuestionPicker {
     public Question getNewQuestion(){
-        QuestionPrompt newPrompt = new QuestionPrompt("Status", "What are you doing right now?", 1);
-
-
         ArrayList<QuestionOption> newOptions = new ArrayList<>();
         newOptions.add(new QuestionOption("working", "Working"));
         newOptions.add(new QuestionOption("media", "Media"));
@@ -18,7 +15,7 @@ public class QuestionPicker {
         newOptions.add(new QuestionOption("eating", "Eating"));
         newOptions.add(new QuestionOption("other", "Other"));
 
-        Question returnQ = new Question(newPrompt, newOptions);
+        Question returnQ = new Question("status_standard", "What are you doing right now?", newOptions);
 
         return returnQ;
     }
