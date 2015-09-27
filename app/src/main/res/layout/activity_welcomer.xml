@@ -29,8 +29,9 @@
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="50dp"
-            android:layout_gravity="right"
-            android:hint="Enter your name here"/>
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/name"
+            android:id="@+id/name"/>
 
         <Button
             android:layout_width="250dp"

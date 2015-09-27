@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
 
 public class ActivityPreferences extends Activity {
 
@@ -33,5 +35,16 @@ public class ActivityPreferences extends Activity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void sendMessage(View view) {
+        EditText num = (EditText) findViewById(R.id.name);
+        String message = num.getText().toString();
+        try {
+            int numPrefer = Integer.parseInt(message);
+        }
+        catch(Exception e) {
+            System.out.println("Number is not an integer");
+        }
     }
 }
